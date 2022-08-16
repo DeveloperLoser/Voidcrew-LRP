@@ -24,3 +24,25 @@
 		   /obj/item/restraints/handcuffs/cable/sinew = 1)
 	result = /obj/item/pickaxe/improvised/sinew
 	category = CAT_MISC
+
+/datum/crafting_recipe/shutters
+	name = "Shutters"
+	reqs = list(/obj/item/stack/sheet/plasteel = 10,
+				/obj/item/stack/cable_coil = 10,
+				/obj/item/electronics/airlock = 1
+				)
+	result = /obj/machinery/door/poddoor/shutters/preopen
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
+	time = 15 SECONDS
+	category = CAT_MISC
+
+/datum/crafting_recipe/blast_doors
+	name = "Blast Door"
+	reqs = list(/obj/item/stack/sheet/plasteel = 15,
+				/obj/item/stack/cable_coil = 15,
+				/obj/item/electronics/airlock = 1
+				)
+	result = /obj/machinery/door/poddoor/preopen
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
+	time = 30 SECONDS
+	category = CAT_MISC
