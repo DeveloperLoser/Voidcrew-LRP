@@ -11,7 +11,6 @@
 	req_one_access = get_all_accesses() + get_all_centcom_access()
 
 /obj/machinery/recycler/proc/recycle_item(obj/item/being_recycled)
-
 	var/obj/item/grown/log/wood_log = being_recycled
 	if(istype(wood_log))
 		var/seed_modifier = 0
